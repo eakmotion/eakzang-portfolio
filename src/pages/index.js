@@ -9,9 +9,13 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className="hero">
       <div className='hero-group'>
-      <h1>Hi people</h1>
-      <p>Welcome to my Portfolio.</p>
-      <Link to="/page-2/">Go To Projects</Link>
+      <h1>EAK ZANG</h1>
+      <p>
+        Full-Stack developer
+        <br />
+        Welcome to my portfolio!
+      </p>
+      <Link to="/page-2/">Show me more</Link>
       </div>
     </div>
   </Layout>

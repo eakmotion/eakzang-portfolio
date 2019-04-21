@@ -23,11 +23,15 @@ a
     color: white
     font-size: 60px
     line-height: 1.2
+    opacity: 0
+    animation: hero-animation 3s 0.1s forwards cubic-bezier(0.2, 0.8, 0.2, 1)
 
   p
     color: rgba(255, 255, 255, 0.8)
     font-size: 30px
     line-height: 1.5
+    opacity: 0
+    animation: hero-animation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1)
 
   a
     font-size: 17px
@@ -38,9 +42,22 @@ a
     padding: 9px 20px
     border: 1px solid rgba(255, 255, 255, 0.25)
     border-radius: 20px
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1)
+
+    &:hover
+      background: white
+      color: black
 
 .hero-group
   margin: 0 auto
   max-width: 500px
   padding: 150px 50px
   text-align: center
+
+@keyframes hero-animation
+  0%
+    opacity: 0
+    transform: translateY(20px)
+  100%
+    opacity: 1
+    transform: translateY(0px)

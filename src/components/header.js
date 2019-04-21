@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
         <img src={require('../images/logo-full.svg')} width='150' alt={siteTitle} />
       </Link>
       <Link to='/projects'>Projects</Link>
-      <Link to='/bio'>Bio</Link>
+      <Link to='/about'>About</Link>
       <Link to='/linkedin'>LinkedIn</Link>
       <Link to='/schedule'>
         <button>Schedule</button>
