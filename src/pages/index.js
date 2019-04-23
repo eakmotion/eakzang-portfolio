@@ -16,6 +16,14 @@ const IndexPage = () => (
           Welcome to my portfolio!
         </p>
         <Link to='/page-2/'>Show me more</Link>
+        <div className='logos'>
+          <img src='https://rubyonrails.org/images/rails-logo.svg' width='60px' alt='Rails' />
+          <img src='https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' width='60px' alt='React' />
+          <img src='https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png' width='60px' alt='Redux' />
+          <img src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' width='60px' alt='Node' />
+          <img src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg' width='60px' alt='Python' />
+          <img src='https://upload.wikimedia.org/wikipedia/commons/9/92/Official_Elixir_logo.png' width='60px' alt='Elixir' />
+        </div>
         <svg
           width='100%'
           height='172'
