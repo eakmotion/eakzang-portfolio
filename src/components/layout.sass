@@ -69,6 +69,23 @@ a
   padding: 150px 50px
   text-align: center
 
+.cards
+  h2
+    margin: 50px 20px
+    font-size: 60px
+    text-align: center
+    font-weight: 700
+    background: linear-gradient(104deg, #050A27 0%, #4A548C 100%)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.card-group
+  margin: 50px 40px 100px
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 40px
+  justify-items: center
+
 @keyframes hero-animation
   0%
     opacity: 0
@@ -80,3 +97,11 @@ a
 @media (max-width: 640px)
   .hero .logos 
     grid-template-columns: repeat(3, 1fr)
+
+@media (max-width: 1060px)
+  .card-group
+    grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 720px)
+  .card-group
+    grid-template-columns: repeat(1, 1fr)

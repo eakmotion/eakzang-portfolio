@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Card from '../components/card';
 
 const IndexPage = () => (
   <Layout>
@@ -50,6 +51,35 @@ const IndexPage = () => (
             />
           </path>
         </svg>
+      </div>
+    </div>
+    <div className='cards'>
+      <h2>Open-source projects</h2>
+      <div className='card-group'>
+        <Card 
+          title='Would You Rather'
+          text='React, Redux, ES6'
+          image={require('../images/project-1.png')} />
+        <Card 
+          title='UdaciCards mobile'
+          text='React Native, Redux'
+          image={require('../images/project-1.png')} />
+        <Card 
+          title='Safety Alert'
+          text='Ruby on Rails, RSpec, Data scraping'
+          image={require('../images/project-1.png')} />
+        <Card 
+          title='Marketplace'
+          text='Ruby on Rails, Stripe API'
+          image={require('../images/project-1.png')} />
+          <Card 
+          title='Apartment Finder'
+          text='Ruby on Rails, Data scraping'
+          image={require('../images/project-1.png')} />
+        <Card 
+          title='A Book Tracking App'
+          text='React, Library Books API'
+          image={require('../images/project-1.png')} />
       </div>
     </div>
   </Layout>
