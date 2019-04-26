@@ -1,0 +1,28 @@
+{
+  "experience": [
+    {
+      "title": "Scorebook Live",
+      "location": "Los Angeles",
+      "duration": "2+ years",
+      "image": "https://d2ddoduugvun08.cloudfront.net/items/2d1k3r2S0K2B0F1z3B0D/sbl-logo.png?X-CloudApp-Visitor-Id=2827218&v=36184781"
+    },
+    {
+      "title": "FlashFunders",
+      "location": "California",
+      "duration": "1+ years",
+      "image": "https://d2ddoduugvun08.cloudfront.net/items/2d1k3r2S0K2B0F1z3B0D/sbl-logo.png?X-CloudApp-Visitor-Id=2827218&v=36184781"
+    },
+    {
+      "title": "OOZOU",
+      "location": "Bangkok",
+      "duration": "3+ years",
+      "image": "https://d2ddoduugvun08.cloudfront.net/items/2d1k3r2S0K2B0F1z3B0D/sbl-logo.png?X-CloudApp-Visitor-Id=2827218&v=36184781"
+    },
+    {
+      "title": "Digital Government (DGA)",
+      "location": "Bangkok",
+      "duration": "2+ years",
+      "image": "https://d2ddoduugvun08.cloudfront.net/items/2d1k3r2S0K2B0F1z3B0D/sbl-logo.png?X-CloudApp-Visitor-Id=2827218&v=36184781"
+    }
+  ]
+}

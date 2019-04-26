@@ -6,6 +6,30 @@ import SEO from '../components/seo'
 import Card from '../components/card'
 import Section from '../components/section'
 import Wave from '../components/wave'
+import staticData from '../../static-data.json'
+import Cell from '../components/cell'
+import styled from 'styled-components'
+
+const SectionCaption = styled.p`
+  font-weight: 600;
+  font-size: 18px;
+  color: #94A4BA;
+  text-transform: uppercase;
+  text-align: center;
+`
+
+const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 0 20px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`
 
 const IndexPage = () => (
   <Layout>
@@ -94,6 +118,20 @@ const IndexPage = () => (
         Python, and modern JavaScript. Creative thinker with a passion for 
         test driven development. '
     />
+
+    <SectionCaption>
+      9+ years experiences with great companies
+    </SectionCaption>
+    <SectionCellGroup>
+      {staticData.experience.map(cell => (
+        <Cell 
+          title={cell.title} 
+          image={cell.image}
+          location={cell.location}
+          duration={cell.duration}
+          />
+      ))}
+    </SectionCellGroup>
   </Layout>
 )
 
