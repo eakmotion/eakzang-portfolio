@@ -125,6 +125,7 @@ const IndexPage = () => (
     <SectionCellGroup>
       {staticData.experience.map(cell => (
         <Cell 
+          key={cell.title}
           title={cell.title} 
           image={cell.image}
           location={cell.location}
