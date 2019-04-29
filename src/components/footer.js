@@ -59,20 +59,21 @@ const Copyright = styled.div`
   max-width: 500px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
+  text-align: center;
 `
 
 const FooterLink = ({ title, url }) => (
   <a href={url}>{title}</a>
 )
 
-const Footer = ({ data, children }) => (
+const Footer = ({ children }) => (
   <FooterGroup>
     <Text>Want to schedule an interview call?</Text>
     <Button>
-      <a href='https://calendly.com/eakmotion/15-30-minutes-interview' target='_blank'>Schedule a call</a>
+      <a href='https://calendly.com/eakmotion/15-30-minutes-interview' target='_blank' rel='noopener noreferrer'>Schedule a call</a>
     </Button>
     <LinkGroup>
-      {data.edges.map(edge => <FooterLink key={edge.node.title} {...edge.node} />)}
     </LinkGroup>
     <Copyright>
       {children}
